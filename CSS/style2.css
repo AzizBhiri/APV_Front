@@ -7,12 +7,12 @@
     position: absolute;
     right: 235px;
     top : 96px;
-    -webkit-animation:spin 4s linear infinite;
+    /* -webkit-animation:spin 4s linear infinite;
     -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite; */
 }
 
-@-moz-keyframes spin { 
+/* @-moz-keyframes spin { 
     100% { -moz-transform: rotate(360deg); } 
 }
 @-webkit-keyframes spin { 
@@ -23,7 +23,7 @@
         -webkit-transform: rotate(360deg); 
         transform:rotate(360deg); 
     } 
-}
+} */
 
 .text1 {
     position: absolute;
@@ -32,7 +32,7 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.arrow {
+.arrow1 {
     position: absolute;
     top : 118px;
     right: 330px; 
@@ -40,6 +40,29 @@
     animation-duration: 0.5s;
     animation-iteration-count: infinite;
 }
+
+.delete {
+    position: absolute;
+    right: 235px;
+    top : 180px;
+}
+
+.text2 {
+    position: absolute;
+    top : 195px;
+    right: 370px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.arrow2 {
+    position: absolute;
+    top : 200px;
+    right: 330px; 
+    animation-name: moving_arrow;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
 
 @keyframes moving_arrow {
 0%   {right: 334px;}
