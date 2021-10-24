@@ -49,14 +49,14 @@
 
 .text2 {
     position: absolute;
-    top : 195px;
+    top : 192px;
     right: 370px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .arrow2 {
     position: absolute;
-    top : 200px;
+    top : 205px;
     right: 330px; 
     animation-name: moving_arrow;
     animation-duration: 0.5s;
@@ -64,10 +64,37 @@
 }
 
 
+.details {
+    position: absolute;
+    right: 235px;
+    top : 260px;
+}
+
+.text3 {
+    position: absolute;
+    top : 270px;
+    right: 370px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.arrow3 {
+    position: absolute;
+    top : 280px;
+    right: 330px; 
+    animation-name: moving_arrow;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
 @keyframes moving_arrow {
 0%   {right: 334px;}
 25%  {right: 332px;}
 50%  {right: 330px;}
 75%  {right: 328px;}
 100% {right: 326px;}
+}
+
+
+a:hover {
+    color: white;
 }
