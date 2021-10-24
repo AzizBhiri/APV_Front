@@ -1,0 +1,50 @@
+* {
+    overflow: hidden;
+    background-color: #3F377C;
+}
+
+.plus {
+    position: absolute;
+    right: 235px;
+    top : 96px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
+.text1 {
+    position: absolute;
+    top : 105px;
+    right: 370px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.arrow {
+    position: absolute;
+    top : 118px;
+    right: 330px; 
+    animation-name: moving_arrow;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moving_arrow {
+0%   {right: 334px;}
+25%  {right: 332px;}
+50%  {right: 330px;}
+75%  {right: 328px;}
+100% {right: 326px;}
+}
